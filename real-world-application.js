@@ -66,10 +66,33 @@ var crayola1990 = [
  * there are multiple ways to do something like this but you might consider using split and join
  */
 
-function fix(arr) {
-    for (var i = 0; i < arr.length; i++) {
-        arr[i] = arr[i].split(" ").join("-").toLowerCase()
+// function fix(arr) {
+//     var out = []
+//     for (var i = 0; i < arr.length; i++) {
+//         out[i] = arr[i].split(" ").join("-").toLowerCase()
+//             //out.push(arr[i].split(" ").join("-").toLowerCase())
+//     }
+//     return arr
+// }
+// console.log(fix(crayola1990))
+
+// var slugged = crayola1990.map(c => c.toLowerCase().split(' ').join('-')) // same thing
+//     // => = function(c){ return c. toLowerCase().split(' ').join('-'))
+
+var cElem = document.getElementById('crayons')
+
+function drawColors(arr) {
+    var slugs = []
+    var template = ``
+
+    for (let i = 0; i < arr.length; i++) {
+        var color = arr[i]
+        var
+            slugs[i] = color.split(' ').join('-').tolowercase()
+        template += `<ul>
+    <li>${arr[i]} ===> ${slugs[i]}</li>
+    `
     }
-    return arr
+    return template
 }
-console.log(fix(crayola1990))
+console.log(drawColors(slugged))

@@ -44,3 +44,15 @@
 //     return obj.title = 'instructor;'
 // })
 // console.log(instructors)
+
+// function findAllPeopleWithTitle(arr, title) {
+//     var out = []
+//     title = title.toLowerCase()
+//     for (let i = 0; i < arr.length; i++) {
+//         var person = arr[i];
+//         if (person.title.toLowerCase == title) {
+//             out.push(person)
+//         }
+//     }
+//     return out
+// }

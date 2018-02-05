@@ -3,6 +3,19 @@
 // var sentence = 'When i went to the mall i bought a pair of shoes.';
 // console.log(sentence.replace(/ i /g, " I "));
 
+// function capitalI(str) {
+//     var arr = str.split(' ')
+//     for (var i = 0; i < arr.length; i++) {
+//         var word = arr[i]
+//         if (word == 'i') {
+//             if (word == 'i') {
+//                 arr[i] = "i"
+//             }
+//         }
+//     }
+//     return arr.join(' ')
+
+// }
 
 
 
@@ -15,6 +28,7 @@
 //     var arrStr = jsHistory.split('');
 //     var counta = 0;
 //     var acount = 0;
+//     var char = str[i].tolowercase;
 //     for (var i = 0; i < arrStr.length; i++) {
 //         if (arrStr[i] == "a" || arrStr[i] == "A") {
 //             counta++;
@@ -47,3 +61,17 @@
 //     return outStr;
 // }
 // console.log(chkScream(text));
+
+// function wordCapital(str, word) {
+//     var arr = str.split(' ')
+//     for (let i = 0; i < arr.length; i++) {
+//         const checkWord = arr[i].toLowerCase();
+//         if (checkWord.includes(word.toLowerCase())) {
+//             arr[i] = arr[i].toUpperCase()
+
+//         }
+//     }
+//     return arr.join(' ')
+// }
+// console.log(wordCapital(text, 'scream'))
+//     //resolve scream in a word, e.g. screamer, punctuation, etc.
